@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+
+# This is the function we can use  later
+
+year = int(input("Give me a year: "))
+
+
+def is_leap(year):
+    leap = False
+    if year % 4 == 0:
+        return True
+    if year % 100 == 0:
+        return False
+    if year % 400 == 0:
+        return True
+    else:
+        return leap
+
+
+print(is_leap(year))
